@@ -14,33 +14,11 @@
     <link rel="stylesheet" type="text/css" href="asset/landing/css/font-awesome.css">
     <link rel="stylesheet" href="asset/landing/css/templatemo-lava.css">
     <link rel="stylesheet" href="asset/landing/css/owl-carousel.css">
+    <link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-
-<style>
-
-@media screen and (max-width:1024px){
-
-.img-header{
-    width: 20%;
-    float: left;
-    margin-top: 2%;
-}
-}
-
-
-    @media screen and (max-width:680px){
-
-    .img-header{
-        width: 30%;
-        float: left;
-        margin-top: 5%;
-    }
-    }
-
-</style>
 
     <!-- ***** Preloader Start ***** -->
     <div id="preloader">
@@ -437,6 +415,48 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+
+<div style="margin: 0 auto; padding: 4rem; width: 90%;">
+  <h2>FAQ</h2>
+ 
+  <div class="accordion">
+    <div class="accordion-item">
+      <a>Kenapa saya harus menggunakan aplikasi GOLS?</a>
+      <div class="content">
+        <p>1. Harga lebih terjangkau</p>
+        <p>2. Pilihan produk lengkap dari restoran sampai ke PKL</p>
+        <p>3. Berbagai Fitur menarik Mamin, Jasa, Bumdes</p>
+        <p>4. Ikut memberdayakan masyarakat Gresik terutama pelaku UMKM dan Driver</p>
+        <p>5. Ikut membantu mengangkat industri digital lokal</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <a>Bagaimana bila barang saya tertinggal?</a>
+      <div class="content">
+        <p>Apabila dirasa ada barang yang tertinggal setelah menggunakan layanan di GOLS, kamu bisa coba cek riwayat chat-mu dengan driver. Caranya, klik ikon chat. Mungkin saja driver sudah memberi tahu sebelumnya kalau ada barangmu yang tertinggal.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <a>Kenapa saya harus menjadi mitra merchant GOLS?</a>
+      <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <a>Kenapa saya harus menjadi mitra merchant GOLS?</a>
+      <div class="content">
+        <p>1. Potongan komisi lebih sedikit (7%)</p>
+        <p>2. Promosi produk dibantu oleh GOLS</p>
+        <p>3. Adanya pendampingan dan pelatihan pengembangan produk</p>
+        <p>4. Urusan perizinan dibantu oleh GOLS </p>
+        <p>5. Pendaftaran merchant gratis</p>
+        <p>6. Membantu menjangkau pasar yang lebih luas</p>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
 <!-- Carousel wrapper -->
     <!-- Galery End-->
 
@@ -499,6 +519,16 @@
 
     <!-- Global Init -->
     <script src="asset/landing/js/custom.js"></script>
+    <script>
+        const items = document.querySelectorAll(".accordion a");
+        
+        function toggleAccordion(){
+        this.classList.toggle('active');
+        this.nextElementSibling.classList.toggle('active');
+        }
+        
+        items.forEach(item => item.addEventListener('click', toggleAccordion));
+    </script>
 
 </body>
 </html>
